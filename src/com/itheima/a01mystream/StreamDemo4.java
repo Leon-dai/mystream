@@ -11,8 +11,8 @@ public class StreamDemo4 {
         String[] arr2 = {"a", "b", "c"};
 
         //2.获取stream流
-        Arrays.stream(arr).forEach(s -> System.out.println(s));
+        Arrays.stream(arr).forEach(System.out::println);
 
-        Arrays.stream(arr2).forEach(s -> System.out.println(s));
+        Arrays.stream(arr2).forEach(System.out::println);
     }
 }
